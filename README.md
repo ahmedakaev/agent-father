@@ -37,17 +37,19 @@ Father:  Done: dist/it-helpdesk-1.0.0.zip — install guide inside, try test #1 
 
 ## Quick start
 
-1. Download or clone this repository.
-2. Pick your tool:
+Download from **[Releases](https://github.com/ahmedakaev/agent-father/releases/latest)** — pick the file for your tool:
 
-| Tool | How |
-|---|---|
-| **Claude Code / Codex** | Open this folder — Father is picked up automatically. Type "I need an agent for …". |
-| **Claude (web or app)** | Build the package (`python3 agent-father/scripts/father.py package agent-father`), then upload `dist/agent-father-<version>/agent-father.zip` in Settings → Capabilities → Skills. |
-| **Cursor / other Agent Skills tools** | Copy `agent-father/` into `.cursor/skills/` or `.agents/skills/`. |
-| **ChatGPT** | Build the package, create a project, paste `portable/INSTRUCTIONS.md` into the instructions and upload `portable/knowledge/` and `portable/assets/` as files. |
+| Tool | Download | How |
+|---|---|---|
+| **Claude** (web or app) | `agent-father-skill.zip` | Settings → Capabilities → Skills → Upload skill |
+| **Claude Code** | `agent-father-<version>.zip` | Unzip, copy `agent-father/` to `~/.claude/skills/` |
+| **Codex / Antigravity** | `agent-father-<version>.zip` | Unzip, copy `agent-father/` to `.agents/skills/` in your project |
+| **Cursor** | `agent-father-<version>.zip` | Unzip, copy `agent-father/` to `.cursor/skills/` |
+| **Gemini** (Gems) / **ChatGPT** (Projects) | `INSTRUCTIONS.md` + `ALL-IN-ONE.md` | Paste `INSTRUCTIONS.md` into the instructions, upload `ALL-IN-ONE.md` as a knowledge file |
 
-3. Say what agent you need.
+Or clone this repository and open it in Claude Code, Codex or Antigravity — Father is picked up automatically.
+
+Then say: *"I need an agent for …"*.
 
 Father works best where the AI can create files and run Python (Claude Code, Codex, Claude with code execution) — there it validates and packages agents itself. In a plain chat it gives you the files one by one.
 
