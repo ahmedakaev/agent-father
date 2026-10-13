@@ -1,5 +1,7 @@
 # Agent Father
 
+![Agent Father — an agent that builds agents](.github/social-preview.png)
+
 **An agent that builds agents.** Tell it "I need an agent for accounting" or "build a marketing department" — it interviews you, collects the documents your work is based on, shows a plan, and after your "yes" builds ready-to-use AI agents that work in Claude, ChatGPT, Codex, Cursor and other tools.
 
 No coding needed. Free and open source (MIT).

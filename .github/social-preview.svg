@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#151b33"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b6dff"/>
+      <stop offset="1" stop-color="#4f8cff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04">
+    <path d="M0 160H1280M0 320H1280M0 480H1280M320 0V640M640 0V640M960 0V640"/>
+  </g>
+
+  <!-- text -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="80" y="150" fill="#8b9bc9" font-size="26" letter-spacing="4">OPEN SOURCE · MIT</text>
+    <text x="78" y="250" fill="#ffffff" font-size="96" font-weight="700">Agent Father</text>
+    <text x="80" y="315" fill="#c9d3f2" font-size="38">An agent that builds agents</text>
+
+    <g font-size="24" fill="#e6ebff">
+      <rect x="80" y="370" width="138" height="46" rx="23" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+      <text x="149" y="401" text-anchor="middle">interview</text>
+      <text x="240" y="401" fill="#7c8bb8" text-anchor="middle">→</text>
+      <rect x="262" y="370" width="124" height="46" rx="23" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+      <text x="324" y="401" text-anchor="middle">sources</text>
+      <text x="408" y="401" fill="#7c8bb8" text-anchor="middle">→</text>
+      <rect x="430" y="370" width="88" height="46" rx="23" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+      <text x="474" y="401" text-anchor="middle">plan</text>
+      <text x="540" y="401" fill="#7c8bb8" text-anchor="middle">→</text>
+      <rect x="562" y="370" width="158" height="46" rx="23" fill="url(#core)"/>
+      <text x="641" y="401" text-anchor="middle" fill="#ffffff" font-weight="700">ready agent</text>
+    </g>
+
+    <text x="80" y="500" fill="#9aa8d6" font-size="24">Claude · ChatGPT · Gemini · Codex · Cursor · Antigravity</text>
+    <text x="80" y="560" fill="#6f7ca8" font-size="22">github.com/ahmedakaev/agent-father</text>
+  </g>
+
+  <!-- diagram: one agent spawning many -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <circle cx="990" cy="320" r="190" fill="url(#glow)"/>
+    <g stroke="#7c8bff" stroke-opacity="0.55" stroke-width="2.5">
+      <line x1="990" y1="320" x2="1100" y2="150"/>
+      <line x1="990" y1="320" x2="1170" y2="270"/>
+      <line x1="990" y1="320" x2="1160" y2="410"/>
+      <line x1="990" y1="320" x2="1070" y2="520"/>
+      <line x1="990" y1="320" x2="880" y2="500"/>
+      <line x1="990" y1="320" x2="860" y2="170"/>
+    </g>
+    <g font-size="17" fill="#ffffff" text-anchor="middle" font-weight="600">
+      <circle cx="1100" cy="150" r="46" fill="#1d2547" stroke="#5f7cff" stroke-width="2"/>
+      <text x="1100" y="156">Sales</text>
+      <circle cx="1170" cy="270" r="46" fill="#1d2547" stroke="#5f7cff" stroke-width="2"/>
+      <text x="1170" y="276">HR</text>
+      <circle cx="1160" cy="410" r="46" fill="#1d2547" stroke="#5f7cff" stroke-width="2"/>
+      <text x="1160" y="416">IT</text>
+      <circle cx="1070" cy="520" r="46" fill="#1d2547" stroke="#5f7cff" stroke-width="2"/>
+      <text x="1070" y="526">Legal</text>
+      <circle cx="880" cy="500" r="46" fill="#1d2547" stroke="#5f7cff" stroke-width="2"/>
+      <text x="880" y="506">Finance</text>
+      <circle cx="860" cy="170" r="46" fill="#1d2547" stroke="#5f7cff" stroke-width="2"/>
+      <text x="860" y="176">Marketing</text>
+    </g>
+    <circle cx="990" cy="320" r="72" fill="url(#core)"/>
+    <circle cx="990" cy="320" r="72" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+    <text x="990" y="314" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700">Agent</text>
+    <text x="990" y="342" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700">Father</text>
+  </g>
+</svg>
