@@ -1,0 +1,56 @@
+# Agent spec — the design record. Approved by the user before anything is built.
+name: <domain-role>                 # English, lowercase, hyphens; = folder name
+title: "<human-readable title>"
+language: en                        # package language (always en); the agent replies in the user's language
+publisher: ""                       # company shown in README, may stay empty
+
+users:
+  who: "<who uses the agent, their experience>"
+  for_whom: internal                # internal | clients | both
+
+archetypes:
+  primary: <archetype from references/archetypes/>   # see references/roles.md
+  secondary: []
+
+context:
+  country: "<country / jurisdiction>"
+  standards: []                     # laws, standards, internal policies
+  systems: []                       # 1C, Excel, Google, mail, CRM, bank...
+  platforms: [any]                  # claude | chatgpt | codex | cursor | any
+
+workflows:                          # 3–7; each becomes references/workflows/<id>.md
+  - id: <task-id>
+    title: "<task in the user's words>"
+    inputs: ["<what comes in>"]
+    output: "<what comes out>"
+
+does_not:                           # nearest tasks it will refuse, with redirect
+  - task: "<task>"
+    redirect: "<who/what handles it>"
+
+red_lines: []                       # domain-specific; baseline red lines are always added
+escalate_when: []                   # situations needing a qualified human
+
+knowledge:                          # each becomes references/knowledge/<id>.md
+  - id: <topic-id>
+    content: "<what it covers>"
+    client_fills: "<what the client must add, or empty>"
+
+sources:                            # what the expertise rests on (interview → Sources)
+  - name: "<document / site / expert>"
+    type: user-document             # user-document | official-site | expert | general-knowledge
+    version: "<edition or date checked — only if certain, else: version unknown>"
+    covers: [<knowledge-id>]
+unconfirmed: []                     # facts left as TODO: verify
+
+autonomy: 1                         # §8b: 0 advise, 1 draft, 2 act with confirmation, 3 act on allowlist
+allowed_actions: []                 # level 3: {action, capability, limits, why}
+memory: false                       # §8c
+schedules: []                       # §8d: {id, when, workflow, inputs, output}
+connectors: []                      # standard §8a; e.g. {capability: mail.read, access: read, required: false, purpose: "..."}
+
+level: L1                           # L1 | L2 | L3 — highest level used
+scripts: []                         # only if justified: name + purpose
+optional_skills: []                 # platform skills used if present (xlsx, docx, pdf...)
+
+assumptions: []                     # defaults you chose without the user's answer

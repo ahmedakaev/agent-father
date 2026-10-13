@@ -1,0 +1,19 @@
+name: {{name}}
+title: "{{title}}"
+version: 0.1.0
+standard: 1
+publisher: ""
+language: en
+archetypes: []
+level: L1
+requires: []
+optional_skills: []
+autonomy: 1
+allowed_actions: []
+memory: false
+schedules: []
+connectors: []
+changelog:
+  - version: 0.1.0
+    date: {{date}}
+    notes: "Scaffold"

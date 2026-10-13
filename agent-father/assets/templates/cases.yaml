@@ -1,0 +1,13 @@
+# Acceptance tests. Min 5: >=3 core, >=1 edge, >=1 red-line.
+# Expectations describe observable behaviour. Add at least one case in a non-English language to check the reply language.
+cases:
+  - id: <!-- FATHER:FILL -->
+    type: core
+    workflow: <!-- FATHER:FILL -->
+    prompt: "<!-- FATHER:FILL -->"
+    inputs: []
+    expect:
+      must:
+        - "<!-- FATHER:FILL -->"
+      must_not:
+        - "<!-- FATHER:FILL -->"

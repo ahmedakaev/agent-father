@@ -1,0 +1,19 @@
+name: agent-father
+title: "Agent Father"
+version: 1.0.1
+autonomy: 2
+standard: 1
+publisher: ""
+language: en
+archetypes: [builder]
+level: L2
+requires: []
+optional_skills: []
+ignore_markers_in: [assets/templates]
+changelog:
+  - version: 1.0.1
+    date: 2026-10-13
+    notes: "No guessed source editions or years; warning for autonomy 2-3 without connectors; baseline red line 7: destructive recommendations marked 'requires approval'"
+  - version: 1.0.0
+    date: 2026-10-13
+    notes: "First release: interview with sources, Agent Standard v1, 13 archetypes, catalog of ~60 roles, teams, agents from documents, MCP connectors, autonomy levels 0-3, memory, schedules, file formats on request; scaffold/validate/package/package-team/inventory"
